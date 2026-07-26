@@ -1,10 +1,47 @@
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import ArticleCard from "@/components/ArticleCard";
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100">
+      <Header />
+      <Hero />
+      <section className="max-w-7xl mx-auto px-6 py-10">
+
+  <h2 className="text-4xl font-black mb-6">
+    Najnowsze informacje
+  </h2>
+
+  <div className="grid md:grid-cols-3 gap-6">
+
+    <ArticleCard
+  category="Sport"
+  title="Najważniejsze wydarzenia sportowe"
+  description="Relacje, wyniki i najnowsze informacje."
+  image="https://images.unsplash.com/photo-1461896836934-ffe607ba8211"
+/>
+
+    <ArticleCard
+  category="Wydarzenia"
+  title="Gwiazdy na czerwonym dywanie"
+  description="Najciekawsze wydarzenia i relacje."
+  image="https://images.unsplash.com/photo-1506157786151-b8491531f063"
+/>
+
+    <ArticleCard
+  category="Galerie"
+  title="Zdjęcia z najważniejszych imprez"
+  description="Profesjonalne galerie Flash Media."
+  image="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+/>
+
+  </div>
+
+</section>
 
       <header className="bg-black text-white p-6">
         <h1 className="text-3xl font-bold">
-          MEDIA PULSE
+          Flash Media
         </h1>
 
         <nav className="mt-4 flex gap-6">
@@ -66,5 +103,6 @@ export default function Home() {
       </section>
 
     </main>
+
   );
 }
