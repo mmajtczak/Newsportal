@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Header() {
   return (
     <header className="bg-black text-white">
@@ -15,14 +16,52 @@ export default function Header() {
 
 
         <nav>
-          <ul className="flex gap-6 text-sm font-medium">
-            <li>News</li>
-            <li>Sport</li>
-            <li>Rozrywka</li>
-            <li>Wydarzenia</li>
-            <li>Galerie</li>
-          </ul>
-        </nav>
+  <ul className="flex gap-6 text-sm font-medium">
+
+    <li>
+      <Link href="/">
+        News
+      </Link>
+    </li>
+
+    <li>
+      <Link href="/sport">
+        Sport
+      </Link>
+    </li>
+
+    <li>
+      <Link href="/rozrywka">
+        Rozrywka
+      </Link>
+    </li>
+
+    <li>
+      <Link href="/wydarzenia">
+        Wydarzenia
+      </Link>
+    </li>
+
+    <li>
+      <Link href="/galerie">
+        Galerie
+      </Link>
+    </li>
+
+    <li>
+      <Link href="/o-nas">
+        O nas
+      </Link>
+    </li>
+
+    <li>
+      <Link href="/kontakt">
+        Kontakt
+      </Link>
+    </li>
+
+  </ul>
+</nav>
 
       </div>
     </header>
